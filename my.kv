@@ -1,0 +1,33 @@
+<MyGrid>
+    lbl: lbl
+    inp: inp
+    spn: spn
+    inpzing: inpzing
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        Label:
+            id: lbl
+            text:"sifratorius"
+        Spinner:
+            id: spn
+            text: "pasirinkti"
+            values: ("sifruoti","desifruoti")
+            size_hint: (1, 0.5)
+        TextInput:
+            id: inpzing
+            text: "pasirinkite žingsnį"
+            multiline: False
+            padding_y: (5,5)
+            size_hint: (1, 0.5)
+        TextInput:
+            id: inp
+            multiline: False
+            padding_y: (5,5)
+            size_hint: (1, 0.5)
+        Button:
+            text: "paleisti"
+            bold: True
+            background_color: '#fcf403'
+            size_hint: (1, 0.5)
+            on_press: root.btn()
